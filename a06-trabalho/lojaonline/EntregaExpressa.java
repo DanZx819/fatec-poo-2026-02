@@ -1,17 +1,13 @@
 package a06.lojaonline;
 
 public class EntregaExpressa extends ModalidadeEntrega {
-    public EntregaExpressa () {
 
+    public EntregaExpressa() {
+        super("Entrega expressa");
     }
 
     @Override
-    public double calcularFrete(double subtotal){
+    public double calcularFrete(double subtotal) {
         return 20.0;
     }
 }
-
-
-/*
-    giliard.godoi@fatecourinhos.edu.br
-*/

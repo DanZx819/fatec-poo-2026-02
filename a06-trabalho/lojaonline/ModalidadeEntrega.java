@@ -2,23 +2,15 @@ package a06.lojaonline;
 
 public abstract class ModalidadeEntrega {
 
-    private String modalidade;
+    private String nome;
 
-    public ModalidadeEntrega(String modalidade) {
-        this.modalidade = modalidade;
+    protected ModalidadeEntrega(String nome) {
+        this.nome = nome;
     }
 
-    public String getModalidade() {
-        return modalidade;
+    public String getNome() {
+        return nome;
     }
 
-    public void setModalidade(String modalidade) {
-        this.modalidade = modalidade;
-    }
-
-    /*
-        O método abstrato você obrigado a sobreescrever ele.
-        Ele só fornece contrato.
-    */
     public abstract double calcularFrete(double subtotal);
 }
